@@ -2,15 +2,15 @@
 
 //import 'babel-core/polyfill'
 
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React        from 'react'
+import ReactDOM     from 'react-dom'
 import { Provider } from 'react-redux'
-import { Router } from 'react-router'
-import fetch from 'isomorphic-fetch'
+import { Router }   from 'react-router'
+import fetch        from 'isomorphic-fetch'
 
 import configureStore from '../shared/store/configureStore'
-import routes from './../shared/routes.jsx'
-import history from './../shared/history'
+import routes         from './../shared/routes.jsx'
+import history        from './../shared/history'
 
 /* beautify preserve:end */
 

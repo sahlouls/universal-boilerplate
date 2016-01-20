@@ -1,25 +1,24 @@
 /* beautify preserve:start */
 
-// import fs from 'fs'
-// import https from 'https'
-// import compression from 'compression'
-import express from 'express'
-import logger from 'morgan'
-import qs from 'qs'
+// import fs           from 'fs'
+// import https        from 'https'
+// import compression  from 'compression'
+import express         from 'express'
+import logger          from 'morgan'
+import qs              from 'qs'
 // import cookieParser from 'cookie-parser'
 
-import React from 'react'
-import ReactDOM from 'react-dom/server'
+import React        from 'react'
+import ReactDOM     from 'react-dom/server'
 import { Provider } from 'react-redux'
 
-import {RoutingContext, match} from 'react-router'
+import { RoutingContext, match } from 'react-router'
 // import escapeHTML from 'lodash/string/escape'
 
-import routes from '../shared/routes.jsx'
-import configureStore from '../shared/store/configureStore'
-
+import routes           from '../shared/routes.jsx'
+import configureStore   from '../shared/store/configureStore'
 import { fetchCounter } from '../shared/api/counter'
-import clientConfig from '../etc/client-config.json'
+import clientConfig     from '../etc/client-config.json'
 
 // // Configure SSL properties for the server
 // const sslProperties = {
@@ -78,7 +77,7 @@ app.use((req, res) => {
         )
 
         // const initialState = store.getState()
-        const title = 'Universal Voting App'
+        const title = 'Universal Counter App'
 
         const html = renderHTML({
           componentHTML,
